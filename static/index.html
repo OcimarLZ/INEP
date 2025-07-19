@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licenciaturas - Relatórios e Gráficos com base nos dados do INEP</title>
+    <style>
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2E7D32;
+            color: #fff;
+            padding: 24px 0 16px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0 0 8px 0;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #2E7D32;
+            margin-top: 32px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .grafico {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .grafico img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            background: #fafafa;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .tabela {
+            margin: 0 auto 24px auto;
+            max-width: 900px;
+            overflow-x: auto;
+            background: #fafafa;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .tabela iframe {
+            width: 100%;
+            min-height: 320px;
+            border: none;
+        }
+        .creditos {
+            text-align: center;
+            color: #888;
+            font-size: 0.95em;
+            margin-top: 40px;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 8px; }
+            .tabela { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Licenciaturas - Relatórios e Gráficos com base nos dados do INEP</h1>
+        <div>Visualização dos principais relatórios, tabelas e gráficos gerados pela aplicação</div>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Licenciaturas: Qtde de Cursos por Categoria Administrativa</h2>
+            <div class="grafico">
+                <img src="graficos/licenciaturas_categoria_administrativa.png" alt="Gráfico Licenciaturas por Categoria Administrativa">
+            </div>
+            <div class="tabela">
+                <iframe src="tabelas/licenciaturas_categoria_administrativa.html"></iframe>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Cursos de Licenciatura por Tipo de Rede e Modalidade</h2>
+            <div class="grafico">
+                <img src="graficos/cursos_tp_rede_modalidade.png" alt="Gráfico Cursos de Licenciatura por Tipo de Rede e Modalidade">
+            </div>
+            <div class="tabela">
+                <iframe src="tabelas/cursos_tp_rede_modalidade.html"></iframe>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Ingressantes em Licenciaturas por Tipo de Rede e Modalidade</h2>
+            <div class="grafico">
+                <img src="graficos/licenciaturas_ingressos_por_rede_modalidade.png" alt="Gráfico Ingressantes em Licenciaturas por Tipo de Rede e Modalidade">
+            </div>
+            <div class="tabela">
+                <iframe src="tabelas/licenciaturas_ingressos_por_rede_modalidade.html"></iframe>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Inscritos em Licenciaturas por Tipo de Rede e Modalidade</h2>
+            <div class="grafico">
+                <img src="graficos/licenciaturas_inscritos_por_rede_modalidade.png" alt="Gráfico Inscritos em Licenciaturas por Tipo de Rede e Modalidade">
+            </div>
+            <div class="tabela">
+                <iframe src="tabelas/licenciaturas_inscritos_por_rede_modalidade.html"></iframe>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Matrículas Trancadas em Licenciaturas por Tipo de Rede e Modalidade</h2>
+            <div class="grafico">
+                <img src="graficos/licenciaturas_trancadas_por_rede_modalidade.png" alt="Gráfico Matrículas Trancadas em Licenciaturas por Tipo de Rede e Modalidade">
+            </div>
+            <div class="tabela">
+                <iframe src="tabelas/licenciaturas_trancadas_por_rede_modalidade.html"></iframe>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Evadidos em Licenciaturas por Tipo de Rede e Modalidade</h2>
+            <div class="grafico">
+                <img src="graficos/licenciaturas_evadidos_por_rede_modalidade.png" alt="Gráfico Evadidos em Licenciaturas por Tipo de Rede e Modalidade">
+            </div>
+            <div class="tabela">
+                <iframe src="tabelas/licenciaturas_evadidos_por_rede_modalidade.html"></iframe>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Concluintes em Licenciaturas por Tipo de Rede e Modalidade</h2>
+            <div class="grafico">
+                <img src="graficos/licenciaturas_concluintes_por_rede_modalidade.png" alt="Gráfico Concluintes em Licenciaturas por Tipo de Rede e Modalidade">
+            </div>
+            <div class="tabela">
+                <iframe src="tabelas/licenciaturas_concluintes_por_rede_modalidade.html"></iframe>
+            </div>
+        </div>
+		<div class="section">
+            <h2>Relação (%) de Concluintes, Trancados e Evadidos sobre Ingressantes em Licenciaturas</h2>
+            <div class="grafico">
+                <img src="graficos/licenciativa_relacao_conc_tranc_evad_por_ingressante.png" alt="Gráfico Relação (%) de Concluintes, Trancados e Evadidos sobre Ingressantes">
+            </div>
+            <div class="tabela">
+                <iframe src="tabelas/licenciativa_relacao_conc_tranc_evad_por_ingressante.html"></iframe>
+            </div>
+        </div>
+        <!-- Adicione mais seções conforme novos relatórios forem criados -->
+        <div class="creditos">
+            Desenvolvido por sua equipe | Dados: INEP, CAPES, etc.<br>
+            <a href="https://github.com/" target="_blank" style="color:#2E7D32;">Ver código no GitHub</a>
+        </div>
+    </div>
+</body>
+</html> 
